@@ -1,0 +1,60 @@
+<mvc:View controllerName="nwproductsdata.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <content>
+    <Button text="Click me" press="_greetMe"/>
+	<Table id="idProductsTable" items="{path:'prod>/'}">
+		<columns>
+			<Column>
+				<Text text="{i18n>pid}" />
+			</Column>	
+            <Column>
+				<Text text="{i18n>pid1}" />
+			</Column>	
+            <Column>
+				<Text text="{i18n>pid2}" />
+			</Column>	
+            <Column>
+				<Text text="{i18n>pid3}" />
+			</Column>	
+            <Column>
+				<Text text="{i18n>pid4}" />
+			</Column>	
+            <Column>
+				<Text text="{i18n>pid5}" />
+			</Column>	
+            <Column>
+				<Text text="{i18n>pid6}" />
+			</Column>	
+            <Column>
+				<Text text="{i18n>pid7}" />
+			</Column>	
+            <Column>
+				<Text text="{i18n>pid8}" />
+			</Column>	
+            <Column>
+				<Text text="{i18n>pid9}" />
+			</Column>			
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<Text text="{prod>ProductID}" />
+                    <Text text="{prod>ProductName}" />
+                    <Text text="{prod>SupplierID}" />
+                    <Text text="{prod>CategoryID}" />
+                    <Text text="{prod>QuantityPerUnit}" />
+                    <Text text="{prod>UnitPrice}" />
+                    <Text text="{prod>UnitsInStock}" />
+                    <Text text="{prod>UnitsOnOrder}" />
+                    <Text text="{prod>ReorderLevel}" />
+                    <Text text="{prod>Discontinued}" />
+					
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+    </content>
+    </Page>
+</mvc:View>
